@@ -134,24 +134,25 @@ export default function FooterLinksSection() {
         <div className="row">
           <div className="w-12/12">
             <div className="w-10/12 mx-auto">
-              <div className="py-10 px-4 sm:px-6 lg:px-10">
-                <div className="grid grid-cols-1 gap-6">
-                  {sections.map((section, index) => (
-                    <div key={index}>
-                      <p className="text-xs font-bold text-gray-900 mb-2">
-                        {section.title}
-                      </p>
-                      <p className="space-y-1 flex flex-wrap">
-                        {section.items.map((item, idx) => (
-                          <span key={idx} className="text-[13px] text-gray-700">
-                            {item}
-                          </span>
-                        ))}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            <div className="py-10 px-4 sm:px-6 lg:px-10">
+  <div className="grid grid-cols-1 gap-6">
+    {sections.map((section, index) => (
+      <div key={index}>
+        <p className="text-xs font-bold text-gray-900 mb-2">
+          {section.title}
+        </p>
+        <div className="flex flex-wrap gap-x-3 gap-y-1">
+          {section.items.map((item, idx) => (
+            <span key={idx} className="text-sm text-gray-700">
+              {item}
+            </span>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
             </div>
           </div>
         </div>

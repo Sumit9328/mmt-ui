@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedLang, setSelectedLang] = useState("English");
-  
+
   const handleSelect = (lang: string) => {
     setSelectedLang(lang);
     setIsOpen(false);
@@ -183,7 +183,7 @@ export default function Home() {
               <Image
                 src="/assets/images/ic_home_tertiary_where2go.avif"
                 alt="Emirates Airline"
-                width={10}
+                width={50}
                 height={10}
                 className="object-cover"
               />
@@ -193,7 +193,7 @@ export default function Home() {
               <Image
                 src="/assets/images/ic_home_tertiary_where2go.avif"
                 alt="Emirates Airline"
-                width={10}
+                width={50}
                 height={10}
                 className="object-cover"
               />
@@ -203,7 +203,7 @@ export default function Home() {
               <Image
                 src="/assets/images/ic_home_tertiary_where2go.avif"
                 alt="Emirates Airline"
-                width={10}
+                width={50}
                 height={10}
                 className="object-cover"
               />
@@ -213,7 +213,7 @@ export default function Home() {
               <Image
                 src="/assets/images/ic_home_tertiary_where2go.avif"
                 alt="Emirates Airline"
-                width={10}
+                width={50}
                 height={10}
                 className="object-cover"
               />
@@ -223,7 +223,7 @@ export default function Home() {
               <Image
                 src="/assets/images/ic_home_tertiary_where2go.avif"
                 alt="Emirates Airline"
-                width={10}
+                width={50}
                 height={10}
                 className="object-cover"
               />
@@ -281,186 +281,137 @@ export default function Home() {
       </section>
 
       <section className="overflow-hidden bg-gray-100">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="w-12/12">
-              <div className="w-10/12 mx-auto">
-                <div className="container mx-auto px-4 py-6 space-y-10">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="shadow-md p-4 flex items-center space-x-3 bg-white rounded-lg">
-                      <Image
-                        src="/assets/images/Vande-Flight-10072020.avif"
-                        alt="IN"
-                        width={70}
-                        height={14}
-                        className="rounded-sm"
-                      />
-                      <div>
-                        <p className="text-sm font-medium p-0 m-0">
-                          Planning to book an international flight?
-                        </p>
-                        <a href="#" className="text-blue-600 text-sm">
-                          Check Travel Guidelines
-                        </a>
-                      </div>
-                    </div>
-                    <div className="shadow-md p-4 flex items-center space-x-3 bg-white rounded-lg">
-                      <Image
-                        src="/assets/images/language1@2x_20210901.avif"
-                        alt="IN"
-                        width={70}
-                        height={14}
-                        className="rounded-sm"
-                      />
-                      <div>
-                        <p className="text-sm font-medium p-0 m-0">
-                          We are now available in हिंदी!
-                        </p>
-                        <a href="#" className="text-blue-600 text-sm">
-                          Change Language
-                        </a>
-                      </div>
-                    </div>
-                    <div className="shadow-md p-4 flex items-center space-x-3 bg-white rounded-lg">
-                      <Image
-                        src="/assets/images/web-check-in-116x116-23062020.png"
-                        alt="IN"
-                        width={70}
-                        height={14}
-                        className="rounded-sm"
-                      />
-                      <div>
-                        <p className="text-sm font-medium p-0 m-0">
-                          Complete your web check-in on MakeMyTrip
-                        </p>
-                        <a href="#" className="text-blue-600 text-sm">
-                          Know More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-white rounded-lg shadow-md p-6 flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0">
-                    <div>
-                      <h2 className="text-2xl font-bold">Download App Now !</h2>
-                      <p className="text-sm mt-1">
-                        Use code <strong>WELCOMEMMT</strong> and get{" "}
-                        <strong>FLAT 12% OFF</strong> on your first domestic
-                        flight booking
-                      </p>
-
-                      <div className="mt-4 flex">
-                        <div className="flex items-center border rounded-l-md px-2 bg-gray-100">
-
-                          <Image
-                            src="https://flagcdn.com/in.svg"
-                            alt="Emirates Airline"
-                            width={10}
-                            height={10}
-                            className="object-cover"
-                          />
-                          <span className="text-sm font-medium p-0 m-0">
-                            +91
-                          </span>
-                        </div>
-                        <input
-                          type="text"
-                          placeholder="Enter Mobile number"
-                          className="border-t border-b border-r px-3 py-2 w-64 focus:outline-none text-sm"
-                        />
-                        <button className="bg-blue-600 text-white px-4 py-2 text-sm rounded-r-md">
-                          GET APP LINK
-                        </button>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center space-x-4">
-                      <div>
-                        <Image
-                          src="/assets/images/images (1).png"
-                          alt="IN"
-                          width={150}
-                          height={14}
-                          className="rounded-sm"
-                        />
-                        <Image
-                          src="/assets/images/App_Store_(iOS)-Badge-Logo.wine.svg"
-                          alt="IN"
-                          width={150}
-                          height={14}
-                          className="rounded-sm"
-                        />
-                      </div>
-                      <Image
-                        src="/assets/images/dt_app_download_qr.png"
-                        alt="IN"
-                        width={130}
-                        height={14}
-                        className="rounded-sm"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 bg-white rounded-lg p-6 shadow-md">
-                    {[
-                      [
-                        "Chennai Flights",
-                        "Via - Delhi, Mumbai, Coimbatore, Madurai",
-                      ],
-                      [
-                        "Goa Flights",
-                        "Via - Delhi, Mumbai, Bangalore, Ahmedabad",
-                      ],
-                      [
-                        "Mumbai Flights",
-                        "Via - Delhi, Bangalore, Chennai, Ahmedabad",
-                      ],
-                      [
-                        "Hyderabad Flights",
-                        "Via - Chennai, Mumbai, Bangalore, Delhi",
-                      ],
-                      [
-                        "Delhi Flights",
-                        "Via - Mumbai, Pune, Bangalore, Chennai",
-                      ],
-                      [
-                        "Pune Flights",
-                        "Via - Delhi, Bangalore, Chennai, Ahmedabad",
-                      ],
-                      [
-                        "Kolkata Flights",
-                        "Via - Delhi, Mumbai, Bangalore, Pune",
-                      ],
-                      [
-                        "Bangalore Flights",
-                        "Via - Delhi, Pune, Mumbai, Kolkata",
-                      ],
-                      [
-                        "Jaipur Flights",
-                        "Via - Mumbai, Delhi, Pune, Bangalore",
-                      ],
-                    ].map(([title, desc], idx) => (
-                      <div key={idx} className="flex items-center space-x-4">
-                        <Image
-                          src="/assets/images/GoaDT.webp"
-                          alt="Goa Destination"
-                          width={56}
-                          height={56}
-                          className="rounded-full object-cover"
-                        />
-                        <div>
-                          <h4 className="font-semibold">{title}</h4>
-                          <p className="text-sm text-gray-600">{desc}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div className="max-w-screen-xl mx-auto px-4 py-6 space-y-10">
+    {/* Top Info Cards */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      {[
+        {
+          img: "/assets/images/Vande-Flight-10072020.avif",
+          text: "Planning to book an international flight?",
+          link: "Check Travel Guidelines",
+        },
+        {
+          img: "/assets/images/language1@2x_20210901.avif",
+          text: "We are now available in हिंदी!",
+          link: "Change Language",
+        },
+        {
+          img: "/assets/images/web-check-in-116x116-23062020.png",
+          text: "Complete your web check-in on MakeMyTrip",
+          link: "Know More",
+        },
+      ].map((item, idx) => (
+        <div
+          key={idx}
+          className="shadow-md p-4 flex items-center space-x-3 bg-white rounded-lg"
+        >
+          <Image
+            src={item.img}
+            alt="Info"
+            width={70}
+            height={14}
+            className="rounded-sm"
+          />
+          <div>
+            <p className="text-sm font-medium">{item.text}</p>
+            <a href="#" className="text-blue-600 text-sm">
+              {item.link}
+            </a>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+    {/* App Download Section */}
+    <div className="bg-white rounded-lg shadow-md p-6 flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0">
+      {/* Text + Input */}
+      <div className="w-full lg:w-1/2">
+        <h2 className="text-xl sm:text-2xl font-bold text-center lg:text-left">
+          Download App Now !
+        </h2>
+        <p className="text-sm mt-2 text-center lg:text-left">
+          Use code <strong>WELCOMEMMT</strong> and get{" "}
+          <strong>FLAT 12% OFF</strong> on your first domestic flight booking
+        </p>
+
+        <div className="mt-4 flex flex-col sm:flex-row items-center sm:items-stretch justify-center lg:justify-start">
+          <div className="flex items-center border rounded-l-md px-2 bg-gray-100 w-full sm:w-auto mb-2 sm:mb-0">
+            <Image
+              src="https://flagcdn.com/in.svg"
+              alt="IN Flag"
+              width={30}
+              height={10}
+              className="object-cover"
+            />
+            <span className="text-sm font-medium ml-1">+91</span>
+          </div>
+          <input
+            type="text"
+            placeholder="Enter Mobile number"
+            className="border-t border-b border-r px-3 py-2 w-full sm:w-64 focus:outline-none text-sm"
+          />
+          <button className="bg-blue-600 text-white px-4 py-2 text-sm rounded-r-md w-full sm:w-auto mt-2 sm:mt-0">
+            GET APP LINK
+          </button>
+        </div>
+      </div>
+
+      {/* Store Logos + QR */}
+      <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <div className="flex flex-col items-center space-y-2">
+          <Image
+            src="/assets/images/images (1).png"
+            alt="Play Store"
+            width={140}
+            height={14}
+          />
+          <Image
+            src="/assets/images/App_Store_(iOS)-Badge-Logo.wine.svg"
+            alt="App Store"
+            width={140}
+            height={14}
+          />
+        </div>
+        <Image
+          src="/assets/images/dt_app_download_qr.png"
+          alt="QR Code"
+          width={120}
+          height={14}
+        />
+      </div>
+    </div>
+
+    {/* Flight Cards Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-white rounded-lg p-6 shadow-md">
+      {[
+        ["Chennai Flights", "Via - Delhi, Mumbai, Coimbatore, Madurai"],
+        ["Goa Flights", "Via - Delhi, Mumbai, Bangalore, Ahmedabad"],
+        ["Mumbai Flights", "Via - Delhi, Bangalore, Chennai, Ahmedabad"],
+        ["Hyderabad Flights", "Via - Chennai, Mumbai, Bangalore, Delhi"],
+        ["Delhi Flights", "Via - Mumbai, Pune, Bangalore, Chennai"],
+        ["Pune Flights", "Via - Delhi, Bangalore, Chennai, Ahmedabad"],
+        ["Kolkata Flights", "Via - Delhi, Mumbai, Bangalore, Pune"],
+        ["Bangalore Flights", "Via - Delhi, Pune, Mumbai, Kolkata"],
+        ["Jaipur Flights", "Via - Mumbai, Delhi, Pune, Bangalore"],
+      ].map(([title, desc], idx) => (
+        <div key={idx} className="flex items-center space-x-4">
+          <Image
+            src="/assets/images/GoaDT.webp"
+            alt="Flight Destination"
+            width={56}
+            height={56}
+            className="rounded-full object-cover"
+          />
+          <div>
+            <h4 className="font-semibold text-sm">{title}</h4>
+            <p className="text-xs text-gray-600">{desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       <section className="overflow-hidden">
         <div className="container-fluid">

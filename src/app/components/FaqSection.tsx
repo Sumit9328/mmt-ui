@@ -30,11 +30,11 @@ export default function FaqSection() {
         <div className="row">
           <div className="w-12/12">
             <div className="w-10/12 mx-auto">
-              <div className="py-10 px-4 sm:px-6 lg:px-10">
-                <div className="grid md:grid-cols-2 gap-14">
+              <div className="py-6 px-3 sm:px-4 md:px-6 lg:px-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-14">
                   {faqs.map((faq, index) => (
                     <div key={index}>
-                      <h4 className="font-bold text-lg text-gray-800 mb-2">
+                      <h4 className="font-bold text-base sm:text-lg text-gray-800 mb-2">
                         Q - {faq.question}
                       </h4>
                       <p className="text-sm text-gray-700 leading-relaxed">
