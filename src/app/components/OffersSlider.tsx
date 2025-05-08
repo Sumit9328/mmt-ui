@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
+import Image from "next/image";
 import "swiper/css/navigation";
 
 const tabOptions = [
@@ -76,12 +77,14 @@ const OffersSlider = () => {
                         key={index}
                         className="bg-white rounded-lg shadow-md border p-3 flex flex-col sm:flex-row sm:items-center gap-3"
                       >
-                        {/* Optional image:
-                        <img
-                          src={offer.image}
-                          alt={offer.title}
-                          className="w-full sm:w-[100px] h-[100px] object-cover rounded-md"
-                        /> */}
+                        <Image
+  src={offer.image}
+  alt={offer.title}
+  width={100}  // Set a width for the image
+  height={100} // Set a height for the image
+  className="object-cover rounded-md"
+/>
+
   
                         <div>
                           <p className="text-xs text-gray-500 font-bold">
@@ -128,12 +131,14 @@ const OffersSlider = () => {
   {offers.map((offer, index) => (
     <SwiperSlide key={index}>
       <div className="bg-white rounded-lg shadow-md border p-4 mx-auto max-w-md">
-        {/* Optional image:
-        <img
-          src={offer.image}
-          alt={offer.title}
-          className="w-full h-48 object-cover rounded-md mb-4"
-        /> */}
+      <Image
+  src={offer.image}
+  alt={offer.title}
+  width={100}  // Set a width for the image
+  height={100} // Set a height for the image
+  className="object-cover rounded-md"
+/>
+
         <p className="text-sm text-gray-500 font-bold">{offer.subtitle}</p>
         <h2 className="text-lg font-semibold">{offer.title}</h2>
         <p className="text-sm text-gray-600 mt-1">{offer.description}</p>
